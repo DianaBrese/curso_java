@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int y = 32;
+		double x = 10.3575;
+
+		System.out.printf("Resultado = %.2f %n", x);
+
+	}
+}
