@@ -7,7 +7,6 @@ public class Exercicio_Estruturas_Sequenciais {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		
 		//(1)Somar números inteiros
 		System.out.println("Digite dois números inteiros para realizar a soma.");
 		int addNumber1, addNumber2, resultAdd;
