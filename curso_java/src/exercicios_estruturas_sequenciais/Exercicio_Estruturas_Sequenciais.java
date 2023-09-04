@@ -1,3 +1,4 @@
+package exercicios_estruturas_sequenciais;
 import java.util.Scanner;
 
 public class Exercicio_Estruturas_Sequenciais {

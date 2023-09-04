@@ -1,3 +1,4 @@
+package exercicios_estruturas_condicionais;
 import java.util.Scanner;
 
 public class Exercicio_Estruturas_Condicionais {
