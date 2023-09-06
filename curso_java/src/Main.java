@@ -6,14 +6,13 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Digite um número:");
-		int x = sc.nextInt();
+		System.out.println("Digite um número inteiro:");
+		int number = sc.nextInt();
 		int soma = 0;
 		
-		while(x != 0) {
-			System.out.println("Digite um número:");
-			soma = soma + x ;
-			 x = sc.nextInt(); 
+		for(int i = 0; i < number; i++) {
+			int x = sc.nextInt();
+			soma = soma + x;
 		}
 		
 		System.out.println("Soma: " + soma);
