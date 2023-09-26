@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 INDEX VERSION 1.134+C:\javaprojects\.metadata\.plugins\org.eclipse.jdt.core
 3453313424.index
+=======
+INDEX VERSION 1.134+C:\Users\diana\OneDrive\Desktop\Estudos\Andamento\ws-java\.metadata\.plugins\org.eclipse.jdt.core
+3376472041.index
+3079489510.index
+>>>>>>> f206e1a049d52c26fae6b2150134aaf214356889
 1865797976.index
