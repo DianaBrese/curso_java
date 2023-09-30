@@ -16,13 +16,13 @@ public class Exercicio_1 {
 		sc.nextLine();
 		String holder = sc.nextLine();
 
-		System.out.println("Is there na initial balance (y/n)?");
+		System.out.println("Is there an initial balance (y/n)?");
 		char response = sc.next().charAt(0);
 
 		if (response == 'y') {
 			System.out.println("Enter inicial balance value: ");
-			double balance = sc.nextDouble();
-			account = new Account(number, holder, balance);
+			double initialDeposit = sc.nextDouble();
+			account = new Account(number, holder, initialDeposit);
 		} else if (response == 'n') {
 			account = new Account(number, holder);
 		}
