@@ -1,28 +1,15 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
 public class testeClass {
-
-	public static void main(String[] args) {
-
-		Scanner sc = new Scanner(System.in);
-
-		List<String> list = new ArrayList<>();
-		
-		list.add("Maria");
-		list.add("Alex");
-		list.add("Bob");
-		list.add("Anna");
-		
-		for(String forList: list) {
-			System.out.println(forList);
+	public static void main(String a[]) {
+		Scanner sc = new Scanner(System.in); // prepara console
+		System.out.print("No final? ");
+		int limite = sc.nextInt();
+		int soma = 0;
+		for (int i=1; i<=limite; i++) {
+			System.out.printf("%3da. soma parcial = %6d%n", i, soma); 
+			soma += i;
 		}
-		
-		
-		
+		System.out.printf("Soma total[0..%3d] = %6d%n", limite, soma);
 		sc.close();
-
 	}
-
 }
