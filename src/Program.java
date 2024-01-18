@@ -1,18 +1,23 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Program {
-
 	public static void main(String[] args) {
-		Account acc1 = new Account(1001, "Alex", 1000.00);
-
-		acc1.withdraw(200.00);
-		System.out.println(acc1.getBalance());
-		
-		Account acc2 = new SavingsAccount(1002, "Maria", 1000.00, 0.01);
-		acc2.withdraw(200.00);
-		System.out.println(acc2.getBalance());
-		
-		Account acc3 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
-		acc3.withdraw(200.00);
-		System.out.println(acc3.getBalance());
+		File file = new File("C:\\temp\\in.txt");
+		Scanner sc = null;
+		try {
+			sc = new Scanner(file);
+			while (sc.hasNextLine()) {
+				System.out.println(sc.nextLine());
+			}
+		} catch (IOException e) {
+			System.out.println("Error opening file: " + e.getMessage());
+		} finally {
+			if (sc != null) {
+				sc.close();
+			}
+			System.out.println("Finally block executed");
+		}
 	}
 }
